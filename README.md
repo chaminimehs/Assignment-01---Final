@@ -51,3 +51,27 @@ Accuracy scores are calculated for all models.
 Classification reports provide precision, recall, and F1-score metrics.
 
 Confusion matrices visualize the performance of each model.
+Results
+
+The script prints:
+
+Best hyperparameters for the Random Forest model.
+
+Accuracy and classification reports for each model.
+
+A visual representation of confusion matrices using seaborn.
+
+Installation and Dependencies
+
+To run the script, install the required Python libraries:
+pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+
+Future Improvements
+
+Feature engineering to improve model performance.
+
+Hyperparameter tuning for XGBoost and Gradient Boosting.
+
+Adding more data points for improved generalization.
+
+Exploring deep learning models for better accuracy.
