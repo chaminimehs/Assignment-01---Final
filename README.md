@@ -18,11 +18,11 @@ The dataset used for this project is stored in Elite Sports Cars in Data.csv. It
 
 Data Preprocessing
 
--Irrelevant columns (Brand, Model, Country, Modification, Log_Price, Log_Mileage) are removed.
+   -Irrelevant columns (Brand, Model, Country, Modification, Log_Price, Log_Mileage) are removed.
 
--Categorical variables (Condition, Fuel_Type, Drivetrain, Transmission, Popularity, Market_Demand) are label-encoded.
+   -Categorical variables (Condition, Fuel_Type, Drivetrain, Transmission, Popularity, Market_Demand) are label-encoded.
 
--Features are standardized using StandardScaler.
+   -Features are standardized using StandardScaler.
 
--The dataset is split into 80% training and 20% testing using train_test_split with stratification.
+   -The dataset is split into 80% training and 20% testing using train_test_split with stratification.
 
