@@ -25,4 +25,29 @@ Data Preprocessing
    -Features are standardized using StandardScaler.
 
    -The dataset is split into 80% training and 20% testing using train_test_split with stratification.
+Machine Learning Models
 
+The following models are implemented and evaluated:
+
+Random Forest Classifier
+
+Hyperparameter tuning is performed using GridSearchCV.
+
+The best model is selected based on cross-validation performance.
+
+XGBoost Classifier
+
+The model is trained using the multi:softmax objective for multi-class classification.
+
+The evaluation metric used is mlogloss.
+
+Gradient Boosting Classifier
+
+The model is trained with default hyperparameters and evaluated.
+Model Evaluation
+
+Accuracy scores are calculated for all models.
+
+Classification reports provide precision, recall, and F1-score metrics.
+
+Confusion matrices visualize the performance of each model.
