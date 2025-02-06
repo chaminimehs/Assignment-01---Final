@@ -18,60 +18,78 @@ The dataset used for this project is stored in Elite Sports Cars in Data.csv. It
 
 Data Preprocessing
 
-   -Irrelevant columns (Brand, Model, Country, Modification, Log_Price, Log_Mileage) are removed.
+        -Irrelevant columns (Brand, Model, Country, Modification, Log_Price, Log_Mileage) are removed.
 
-   -Categorical variables (Condition, Fuel_Type, Drivetrain, Transmission, Popularity, Market_Demand) are label-encoded.
+       -Categorical variables (Condition, Fuel_Type, Drivetrain, Transmission, Popularity, Market_Demand) are label-encoded.
 
-   -Features are standardized using StandardScaler.
+       -Features are standardized using StandardScaler.
 
-   -The dataset is split into 80% training and 20% testing using train_test_split with stratification.
+       -The dataset is split into 80% training and 20% testing using train_test_split with stratification.
+
+   
 Machine Learning Models
 
-The following models are implemented and evaluated:
+-The following models are implemented and evaluated:
 
-Random Forest Classifier
+1. Random Forest Classifier
 
-Hyperparameter tuning is performed using GridSearchCV.
+    -Hyperparameter tuning is performed using GridSearchCV.
 
-The best model is selected based on cross-validation performance.
+    -The best model is selected based on cross-validation performance.
 
-XGBoost Classifier
+2. XGBoost Classifier
 
-The model is trained using the multi:softmax objective for multi-class classification.
+    -The model is trained using the multi:softmax objective for multi-class classification.
 
-The evaluation metric used is mlogloss.
+   -The evaluation metric used is mlogloss.
 
-Gradient Boosting Classifier
+3. Gradient Boosting Classifier
 
-The model is trained with default hyperparameters and evaluated.
+   -The model is trained with default hyperparameters and evaluated.
+
+   
 Model Evaluation
 
-Accuracy scores are calculated for all models.
+        -Accuracy scores are calculated for all models.
+  
+        -Classification reports provide precision, recall, and F1-score metrics.
+  
+        -Confusion matrices visualize the performance of each model.
 
-Classification reports provide precision, recall, and F1-score metrics.
-
-Confusion matrices visualize the performance of each model.
+  
 Results
 
 The script prints:
 
-Best hyperparameters for the Random Forest model.
+     -Best hyperparameters for the Random Forest model.
 
-Accuracy and classification reports for each model.
+     -Accuracy and classification reports for each model.
 
-A visual representation of confusion matrices using seaborn.
+     -A visual representation of confusion matrices using seaborn.
+
+     
 
 Installation and Dependencies
 
 To run the script, install the required Python libraries:
-pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+
+           -pip install pandas numpy scikit-learn matplotlib seaborn xgboost
+
+How to Run  
+
+1. Place Elite Sports Cars in Data.csv in the project directory.
+2. Run the script:               -python script.py
+3. The script will output the results and display confusion matrix visualizations.
+
+
+
 
 Future Improvements
 
-Feature engineering to improve model performance.
+    --Feature engineering to improve model performance.
 
-Hyperparameter tuning for XGBoost and Gradient Boosting.
+    --Hyperparameter tuning for XGBoost and Gradient Boosting.
 
-Adding more data points for improved generalization.
+    --Adding more data points for improved generalization.
 
-Exploring deep learning models for better accuracy.
+    --Exploring deep learning models for better accuracy.
